@@ -19,15 +19,16 @@ public class Main {
         int d = scan.nextInt();
         // min(5,7);
         System.out.print("Минимальное число равно: ");
-        System.out.print(min(a,b,c,d));
+        System.out.println(min(a,b,c,d));
     }
 
-    static void min(int a, int b, int c, int d) {
+    static int min(int a, int b, int c, int d) {
         a=min(a,b);
         b=c;
         a=min(a,b);
         b=d;
-        min(a,b);
+        a=min(a,b);
+        return a;
     }
 
     static int min(int a, int b) {
