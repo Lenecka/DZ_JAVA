@@ -24,13 +24,16 @@ class Dog {
     private int age;
 
     public Dog(String name, int age) {
-    }
-
-    void Dog(String name,int age)
-    {
+        
         this.name=name;
         this.age=age;
     }
+
+    //void Dog(String name,int age)
+    //{
+     //   this.name=name;
+       // this.age=age;
+   // }
 
     public String getName() {
         return name;
