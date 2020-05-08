@@ -11,7 +11,7 @@ public class Main {
             String s = null;
             String m = s.toLowerCase();
         }catch (NullPointerException e){
-            System.out.println("Ошибка! Текст отсутствует");
+           // System.out.println("Ошибка! Текст отсутствует");
             e.printStackTrace();
         }
     }
