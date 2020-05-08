@@ -9,7 +9,7 @@ public class Main {
             int[] m = new int[2];
             m[8] = 5;
             //System.out.println(m[8]);
-            }catch (Exception e){
+            }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Ошибка! Выход за пределы массива");
             e.printStackTrace();
         }
