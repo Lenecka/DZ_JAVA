@@ -10,7 +10,7 @@ public class Main {
             m[8] = 5;
             //System.out.println(m[8]);
             }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Ошибка! Выход за пределы массива");
+            // System.out.println("Ошибка! Выход за пределы массива");
             e.printStackTrace();
         }
     }
