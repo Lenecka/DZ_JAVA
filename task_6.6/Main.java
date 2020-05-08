@@ -9,7 +9,7 @@ public class Main {
         try {
             int a = 42 / 0;
             } catch (ArithmeticException e){
-           System.out.println("На 0 делить нельзя");
+          // System.out.println("На 0 делить нельзя");
            e.printStackTrace();
         }
 
