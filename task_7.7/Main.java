@@ -11,6 +11,7 @@ public class Main {
         int i = (int) f;
         byte m=(byte) f;
         //System.out.println(m);
+        //int b = (byte) (i + f);
         int b = (int) (i + m);
         System.out.println(b);
     }
