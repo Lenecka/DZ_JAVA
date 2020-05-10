@@ -10,6 +10,8 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите год     ");
         int date = scan.nextInt();
+        System.out.println(getEaster(date));
+       // LocalDate pasha = getEaster(date);
     }
 
     static LocalDate getEaster(int date) {
@@ -22,13 +24,14 @@ public class Main {
         int f = d + e;
         if (f <= 26) {
             int k = f + 4;
+            //System.out.println("Пасха: "+k+"апреля");
             int mes=04;
-            LocalDate Pasha=LocalDate.of(date,mes,k);
-             return Pasha;        //System.out.println("Пасха: "+k+"апреля");
+            //LocalDate Pasha=LocalDate.of(date,mes,k);
+             return LocalDate.of(date,mes,k);        //System.out.println("Пасха: "+k+"апреля");
         }
          else {
-            LocalDate Pasha=LocalDate.of(date,05,26);
-            return Pasha;      //System.out.println("Пасха: 26 мая");
+           // LocalDate Pasha=LocalDate.of(date,05,26);
+            return LocalDate.of(date,05,26);      //System.out.println("Пасха: 26 мая");
         }
     }
     }
