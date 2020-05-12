@@ -14,6 +14,7 @@ public class Main {
         Date y=format.parse(date);
         SimpleDateFormat a=new SimpleDateFormat("MMM dd,yyyy");
         //format.applyLocalizedPattern("dd.MM.yyyy");
+        //getDayOfYear
         System.out.print(a.format(y).toUpperCase());
 
     }
