@@ -29,9 +29,11 @@ public class Main {
             //LocalDate Pasha=LocalDate.of(date,mes,k);
              return LocalDate.of(date,mes,k);        //System.out.println("Пасха: "+k+"апреля");
         }
-         else {
-           // LocalDate Pasha=LocalDate.of(date,05,26);
-            return LocalDate.of(date,05,26);      //System.out.println("Пасха: 26 мая");
-        }
+        else {
+            int k = f - 26;
+            int mes=05;
+            // LocalDate Pasha=LocalDate.of(date,05,26);
+            return LocalDate.of(date,mes,k);         //System.out.println("Пасха: k мая");
+    }
     }
     }
