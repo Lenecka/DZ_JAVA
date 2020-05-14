@@ -16,6 +16,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите имя месяца     ");
         String date = scan.nextLine();
+        date=date.toLowerCase();//переводит все символы строки в нижний регистр
         List<String> stringList = new ArrayList<>();//создание нового списка
         stringList.add("Январь"); //добавление элементов
         stringList.add("Февраль");
