@@ -43,9 +43,19 @@ public class Main {
         String pathToFile="/Users/temp/Desktop/test/" + name;
         System.out.println("Имя файла: " + name);
 //имя файла прочитали и вывели на экран
-
-        //BufferedWriter writer = new BufferedWriter(new FileWriter(pathToFile));
-
-
+        System.out.println("Введите текст. Для выхода введите:  exit");
+        //BufferedReader buff=new BufferedReader(new InputStreamReader(System.in));
+        String stroka="";
+        BufferedWriter bWriter = new BufferedWriter(new FileWriter(pathToFile)); //запись в файл
+        String line=reader.readLine();
+        stroka+=line;
+        stroka+="\n";
+        while (!reader.readLine().equals("exit")){
+            //BufferedWriter bWriter = new BufferedWriter(new FileWriter(pathToFile));
+           // String line=reader.readLine();
+        //stroka+=line;
+        //stroka+="\n";
+        }
+        bWriter.close();
+        }
     }
-}
