@@ -47,15 +47,23 @@ public class Main {
         //BufferedReader buff=new BufferedReader(new InputStreamReader(System.in));
         String stroka="";
         BufferedWriter bWriter = new BufferedWriter(new FileWriter(pathToFile)); //запись в файл
-        String line=reader.readLine();
-        stroka+=line;
-        stroka+="\n";
-        while (!reader.readLine().equals("exit")){
+        do {
+            String line = reader.readLine();
+            //stroka = line;
+            bWriter.write(line);
+            line += "\n";
+            //bWriter.write(stroka);
+        }
+        while (!reader.readLine().equals("exit")) ;
+
+            //bWriter.write(stroka);
+
             //BufferedWriter bWriter = new BufferedWriter(new FileWriter(pathToFile));
            // String line=reader.readLine();
-        //stroka+=line;
-        //stroka+="\n";
-        }
+       // stroka+=line;
+       // stroka+="\n";
+            //
+
         bWriter.close();
         }
     }
