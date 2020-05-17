@@ -39,3 +39,10 @@ public class Main {
             System.out.println("Work!");
         }
     }
+        public static boolean isWork(CompItem item) {
+        System.out.println(item.getName());
+        return item.getName() != null && item.getName().length() > 4;
+    }
+        public interface CompItem {
+            String getName();
+        }
