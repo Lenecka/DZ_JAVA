@@ -17,7 +17,7 @@
 8
 10
 */
-//СОЗДАЕТСЯ ФАЙЛ В ПАПКЕ НА РАБОЕМ СТОЛЕ Hello.txt В ОПЕРАЦИОННОЙ СИСТЕМЕ .ПУТЬ:/Users/temp/Desktop/test/Hello.txt!
+//СОЗДАЕТСЯ ФАЙЛ В ПАПКЕ НА РАБОЕМ СТОЛЕ Hello.txt В ОПЕРАЦИОННОЙ СИСТЕМЕ MacOS.ПУТЬ:/Users/temp/Desktop/test/Hello.txt!
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
