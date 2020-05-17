@@ -17,12 +17,20 @@
 8
 10
 */
-
+//СОЗДАЕТСЯ ФАЙЛ В ПАПКЕ НА РАБОЕМ СТОЛЕ Hello.txt В ОПЕРАЦИОННОЙ СИСТЕМЕ .ПУТЬ:/Users/temp/Desktop/test/Hello.txt!
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 public class Main {
     public static void main(String[] args) throws IOException {
+        String fileSeparator = System.getProperty("file.separator");
+        String absoluteFilePath = fileSeparator + "Users" + fileSeparator + "temp" + fileSeparator + "Desktop" + fileSeparator + "test" + fileSeparator + "Hello.txt";
+        File file = new File(absoluteFilePath);
+        if (file.createNewFile()) {
+            System.out.println(absoluteFilePath + " Файл создан");
+        } else {
+            System.out.println("Файл " + absoluteFilePath + " уже существует");
+        }
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите имя файла: ");
         String name=reader.readLine();
